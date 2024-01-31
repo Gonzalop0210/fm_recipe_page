@@ -31,15 +31,175 @@
 
 body {
     background-color: var(--eggshell);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1700px;
 }
 
 .body__item {
     background-color: var(--white);
-    width: 800px;
+    width: 650px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    justify-content: space-between;
 }
 
 header img {
-    width: 90%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+header h1 {
+    font-family: 'young_serif';
+    font-weight: 400;
+}
+
+header p {
+    font-family: 'outfit';
+    color: var(--wenge_brown);
+    font-size: .9em;
+}
+
+header .time__preparation {
+    background-color: var(--rose_white);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.time__preparation__item {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time__preparation h3 {
+    font-family: 'outfit';
+    color: var(--dark_raspberry);
+}
+
+.list__time__preparation {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .9em;
+}
+
+.list__time__preparation li {
+    font-family: 'outfit';
+}
+
+.list__time__preparation li b {
+    color: var(--dark_charcoal);
+    margin-left: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subtitle {
+    color: var(--dark_raspberry);
+    font-family: 'young_serif';
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+.ingredientes {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list__ingredientes {
+    margin-left: 30px;
+    font-family: 'outfit';
+    color: var(--wenge_brown);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .9em;
+}
+
+.instrucciones {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list__intructions {
+    list-style: decimal;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .9em;
+}
+
+.list__intructions li {
+    color: var(--wenge_brown);
+    font-family: 'outfit';
+}
+
+footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: 'outfit';
+    color: var(--wenge_brown);
+    font-size: .9em;
+}
+
+.container__item__nutrition {
+    display: flex;
+    flex-direction: column;
+    font-family: 'outfit';
+}
+
+.nutrition__item {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid var(--ligth_grey);
+    align-items: center;
+}
+
+.nutrition__item:nth-child(4) {
+    border: none;
+}
+
+.nutrition__item__name, .nutrition__item__value {
+    width: 50%;
+}
+
+.nutrition__item__name {
+    color: var(--wenge_brown);
+    font-weight: 500;
+}
+
+.nutrition__item__value {
+    color: var(--dark_raspberry);
+    font-weight: 700;
 }
 
 @media (min-width: 1440px) {}
