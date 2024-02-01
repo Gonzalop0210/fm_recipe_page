@@ -243,4 +243,8 @@ footer p {
     .instrucciones {
         height: 720px;
     }
+
+    .footer {
+        height: 260px;
+    }
 }
