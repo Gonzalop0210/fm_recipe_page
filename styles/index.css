@@ -24,9 +24,6 @@
     --ligth_grey: hsl(30, 18%, 87%);
     --wenge_brown: hsl(30, 10%, 34%);
     --dark_charcoal: hsl(24, 5%, 18%);
-
-    /* --font_young_serif: 'Young Serif', serif;
-    --font_outfit: 'Outfit', sans-serif; */
 }
 
 body {
@@ -206,5 +203,44 @@ footer p {
 @media (min-width: 1281px) and (max-width: 1439px) {}
 @media (min-width: 1025px) and (max-width: 1280px) {}
 @media (min-width: 768px) and (max-width: 1024) {}
-@media (min-width: 481px) and (max-width: 767px) {}
-@media (min-width: 320px) and (max-width: 480px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        height: 1850px;
+    }
+
+    .body__item {
+        width: 400px;
+    }
+
+    .instrucciones {
+        height: 600px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        height: 2000px;
+    }
+
+    .body__item {
+        width: 300px;
+        padding: 30px 10px;
+    }
+
+    header img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .time__preparation__item {
+        margin-left: 20px;
+    }
+
+    .instrucciones {
+        height: 720px;
+    }
+}
